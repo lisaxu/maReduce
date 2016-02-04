@@ -409,3 +409,28 @@ Command-line arguments:  -data /s/bach/k/under/lisaxu/cs435 -os linux -ws gtk -a
 
 !ENTRY org.eclipse.jdt.core 4 0 2016-02-03 16:57:01.250
 !MESSAGE Invalid ZIP archive: /s/bach/k/under/lisaxu/CS435/PA1/hadoopJars/hadoop-mapreduce-client-jobclient-2.6.0.jar
+!SESSION 2016-02-03 22:01:36.364 -----------------------------------------------
+eclipse.buildId=4.5.1.v20160106-1000
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data file:/s/bach/k/under/lisaxu/cs435/ -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-02-03 22:01:41.381
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-02-03 22:01:41.381
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+!SESSION 2016-02-03 22:17:28.079 -----------------------------------------------
+eclipse.buildId=4.5.1.v20160106-1000
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data file:/s/bach/k/under/lisaxu/cs435/ -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-02-03 22:17:32.639
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-02-03 22:17:32.639
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.debug.ui 4 0 2016-02-03 22:28:36.549
+!MESSAGE Tab group extension: org.eclipse.cdt.launch.applicationProfileLaunchTabGroup for type org.eclipse.cdt.launch.applicationLaunchType for the [profile] mode has been replaced by extension: org.eclipse.cdt.launch.applicationProfileLaunchTabGroup

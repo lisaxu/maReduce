@@ -5,7 +5,6 @@ import java.util.StringTokenizer;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.ArrayWritable;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.NullWritable;
@@ -13,39 +12,35 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
-import org.apache.hadoop.mapreduce.Mapper.Context;
-import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+
 
 
  
 public class UnigramYear {
-    public static class UnigramYearMapper extends Mapper<NullWritable, BytesWritable, Text, ArrayWritable>{
+    public static class UnigramYearMapper extends Mapper<Text, BytesWritable, Text, IntWritable>{
         //produce <word, [bookID,year]>
         private final static IntWritable one = new IntWritable(1);
-        private Text word = new Text();
+        private Text unigram = new Text();
          
-        public void map(Object key, Text value, Context context) throws IOException, InterruptedException {
-            StringTokenizer itr = new StringTokenizer(value.toString());
-            while (itr.hasMoreTokens()) {
-                word.set(itr.nextToken());
-                //context.write(word, one);
-            }
+        public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
+            String wholeFile = value.toString();
+            //unigram.set(wholeFile);
+            //context.write(unigram, one);
+        	context.write(new Text(wholeFile), new IntWritable(1));
         }
     }
     
-    public static class UnigramYearReducer extends Reducer<Text,ArrayWritable,Text,Text> {
+    public static class UnigramYearReducer extends Reducer<Text,IntWritable,Text,IntWritable> {
     		private IntWritable result = new IntWritable();
 
-    		public void reduce(Text key, Iterable<IntWritable> values,
-                    Context context
-                    ) throws IOException, InterruptedException {
-    			int sum = 0;
-    			for (IntWritable val : values) {
-    				sum += val.get();
-    			}
-    			result.set(sum);
-    			//context.write(key, result);
+    		public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
+    			//int sum = 0;
+    			//for (IntWritable val : values) {
+    			//	sum += val.get();
+    			//}
+    			result.set(2);
+    			context.write(key, result);
     		}
     }
 
@@ -59,18 +54,23 @@ public class UnigramYear {
     	Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "unigram year");
         job.setJarByClass(UnigramYear.class);
+        
+        job.setInputFormatClass(WholeFileInput.class);
+        //set mapper and reducer
         job.setMapperClass(UnigramYearMapper.class);
-        //job.setCombinerClass(IntSumReducer.class);
         job.setReducerClass(UnigramYearReducer.class);
-        job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(Text.class);
-   	  
+       
+        
+        //set input path
     	WholeFileInput.setInputPaths(job, new Path(args[0]));
     	FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-    	    
+    	//set map output K,V
+    	job.setMapOutputKeyClass(Text.class);
+    	job.setMapOutputValueClass(IntWritable.class);
+    	
     	job.setOutputKeyClass(Text.class);
-    	job.setOutputValueClass(Text.class);
+    	job.setOutputValueClass(IntWritable.class);
 
     	boolean success = job.waitForCompletion(true);
     	System.exit(success ? 0 : 1);

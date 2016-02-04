@@ -1,0 +1,80 @@
+package pa1;
+ 
+import java.io.IOException;
+import java.util.StringTokenizer;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.ArrayWritable;
+import org.apache.hadoop.io.BytesWritable;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.NullWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.Mapper.Context;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+
+
+ 
+public class UnigramYear {
+    public static class UnigramYearMapper extends Mapper<NullWritable, BytesWritable, Text, ArrayWritable>{
+        //produce <word, [bookID,year]>
+        private final static IntWritable one = new IntWritable(1);
+        private Text word = new Text();
+         
+        public void map(Object key, Text value, Context context) throws IOException, InterruptedException {
+            StringTokenizer itr = new StringTokenizer(value.toString());
+            while (itr.hasMoreTokens()) {
+                word.set(itr.nextToken());
+                //context.write(word, one);
+            }
+        }
+    }
+    
+    public static class UnigramYearReducer extends Reducer<Text,IntWritable,Text,Text> {
+    		private IntWritable result = new IntWritable();
+
+    		public void reduce(Text key, Iterable<IntWritable> values,
+                    Context context
+                    ) throws IOException, InterruptedException {
+    			int sum = 0;
+    			for (IntWritable val : values) {
+    				sum += val.get();
+    			}
+    			result.set(sum);
+    			//context.write(key, result);
+    		}
+    }
+
+ 
+    public static void main(String[] args) throws Exception {
+    	if (args.length != 2) {
+    	      System.out.printf("Usage: Unigram (Year) <input dir> <output dir>\n");
+    	      System.exit(-1);
+    	    }
+
+    	Configuration conf = new Configuration();
+        Job job = Job.getInstance(conf, "unigram year");
+        job.setJarByClass(UnigramYear.class);
+        job.setMapperClass(UnigramYearMapper.class);
+        //job.setCombinerClass(IntSumReducer.class);
+        job.setReducerClass(UnigramYearReducer.class);
+        job.setOutputKeyClass(Text.class);
+        job.setOutputValueClass(Text.class);
+   	  
+    	WholeFileInput.setInputPaths(job, new Path(args[0]));
+    	FileOutputFormat.setOutputPath(job, new Path(args[1]));
+
+    	    
+    	//job.setOutputKeyClass(Text.class);
+    	//job.setOutputValueClass(IntWritable.class);
+
+    	    boolean success = job.waitForCompletion(true);
+    	    System.exit(success ? 0 : 1);
+ 
+    }
+ 
+}
