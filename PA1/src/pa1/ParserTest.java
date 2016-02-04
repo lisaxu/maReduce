@@ -32,12 +32,18 @@ public class ParserTest {
 		return Integer.parseInt(wholeFile.substring(start+ 2, start + 6));
 	}
 	
+//    degreeoffice@colostate.edu
     public int getBookID(String wholeFile) {
     	int start = wholeFile.indexOf("[EBook");
     	int end = wholeFile.indexOf(']', start);
     	return (Integer.parseInt(wholeFile.substring(start + 8,end)));
-    
 	}
+    
+    public String[] getBookUnigram(String wholeFile){
+    	int start = wholeFile.indexOf("*** START");
+    	start = wholeFile.indexOf("***", start + 5);
+    	//String[] = 
+    }
     
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
