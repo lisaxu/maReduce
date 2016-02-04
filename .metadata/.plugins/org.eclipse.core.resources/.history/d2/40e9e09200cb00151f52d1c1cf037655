@@ -22,34 +22,12 @@ public class UnigramYear {
         //produce <word, [bookID,year]>
         private final static IntWritable one = new IntWritable(1);
         private Text unigram = new Text();
-        
-    	public String getAuthor(String wholeFile) {
-    		int start = wholeFile.indexOf("Author: ");
-    		int end = wholeFile.indexOf('\n', start);
-    		start += wholeFile.substring(start, end).lastIndexOf(' ') + 1;
-    		return wholeFile.substring(start, end);
-    	}
-    	
-        public int getYear(String wholeFile) {
-        	int start = wholeFile.indexOf("Release");
-        	start = wholeFile.indexOf(',', start);
-    		return Integer.parseInt(wholeFile.substring(start+ 2, start + 6));
-    	}
-        public int getBookID(String wholeFile) {
-        	int start = wholeFile.indexOf("[EBook");
-        	int end = wholeFile.indexOf(']', start);
-        	return (Integer.parseInt(wholeFile.substring(start + 8,end)));
-    	}
-     
-        public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
-            String wholeFile = new String(value.getBytes());
-            String author = getAuthor(wholeFile);
-            int year = getYear(wholeFile);
-            int id = getBookID(wholeFile);
-            
+         
+        public void map(NullWritable key, BytesWritable value, Context context) throws IOException, InterruptedException {
+            String wholeFile = value.toString();
             //unigram.set(wholeFile);
             //context.write(unigram, one);
-        	context.write(new Text(author), new IntWritable(1));
+        	context.write(new Text(wholeFile), new IntWritable(1));
         }
     }
     
@@ -88,8 +66,8 @@ public class UnigramYear {
     	FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
     	//set map output K,V
-    	job.setMapOutputKeyClass(Text.class);
-    	job.setMapOutputValueClass(IntWritable.class);
+    	job.setMapOutputKeyClass(NullWritable.class);
+    	job.setMapOutputValueClass(BytesWritable.class);
     	
     	job.setOutputKeyClass(Text.class);
     	job.setOutputValueClass(IntWritable.class);
@@ -98,7 +76,5 @@ public class UnigramYear {
     	System.exit(success ? 0 : 1);
  
     }
-
-
-	
+ 
 }
