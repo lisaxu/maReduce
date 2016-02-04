@@ -42,6 +42,15 @@ public class UnigramYear {
         	return wholeFile.substring(start + 8,end);
     	}
      
+        public String[] getBookUnigram(String wholeFile){
+        	int start = wholeFile.indexOf("*** START");
+        	start = wholeFile.indexOf("***", start + 5);
+        	wholeFile = wholeFile.substring(start + 4);
+        	//System.out.println(wholeFile.substring(0, 100));
+        	String[] ans = wholeFile.split("\\s+");
+        	return ans;
+        }
+        
         public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
             String wholeFile = new String(value.getBytes());
             String author = getAuthor(wholeFile);

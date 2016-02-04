@@ -42,7 +42,10 @@ public class ParserTest {
     public String[] getBookUnigram(String wholeFile){
     	int start = wholeFile.indexOf("*** START");
     	start = wholeFile.indexOf("***", start + 5);
-    	//String[] = 
+    	wholeFile = wholeFile.substring(start + 4);
+    	//System.out.println(wholeFile.substring(0, 100));
+    	String[] ans = wholeFile.split("\\s+");
+    	return ans;
     }
     
 	public static void main(String[] args) throws IOException {
@@ -53,7 +56,10 @@ public class ParserTest {
 		ParserTest t = new ParserTest();
 	
 		test = t.readFile("59.txt", StandardCharsets.US_ASCII);
-		System.out.println(t.getAuthor(test));
+		String[] arr = t.getBookUnigram(test);
+		for(int i = 1; i < 10; i++){
+			System.out.println(arr[i]);
+		}
 	}
 
 }
