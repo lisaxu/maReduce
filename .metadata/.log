@@ -1,0 +1,411 @@
+!SESSION 2016-01-28 14:14:43.879 -----------------------------------------------
+eclipse.buildId=4.5.1.v20160106-1000
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /s/bach/k/under/lisaxu/CS435 -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-01-28 14:14:48.861
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-01-28 14:14:48.861
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-01-28 14:15:27.014
+!MESSAGE Could not auto-share project PA1
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'PA1'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-01-28 14:15:27.015
+!MESSAGE Provided SVN information does not match that on disk for project 'PA1'.
+
+!ENTRY org.eclipse.debug.ui 4 0 2016-01-28 14:58:55.416
+!MESSAGE Tab group extension: org.eclipse.cdt.launch.applicationProfileLaunchTabGroup for type org.eclipse.cdt.launch.applicationLaunchType for the [profile] mode has been replaced by extension: org.eclipse.cdt.launch.applicationProfileLaunchTabGroup
+!SESSION 2016-02-01 10:25:40.537 -----------------------------------------------
+eclipse.buildId=4.5.1.v20160106-1000
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:42.334
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/remote.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:42.517
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/babel.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:42.569
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-valgrind.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:42.704
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-doc.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:42.761
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/subclipse-graph.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:42.844
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/ptp.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:43.012
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/e4-importer.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:43.062
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/jgit.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:43.134
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/subclipse.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:43.196
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/emf-sdk.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:43.339
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-modelbase.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:43.394
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-changelog.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:43.462
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-sqldevtools.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:43.554
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/mylyn-context-java.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:43.653
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/mylyn-commons.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:43.925
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/emf-runtime.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:44.045
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/mylyn-docs.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:44.203
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-rpm-editor.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:44.286
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-enablement.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:44.472
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/rse.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:44.618
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/swt-chart.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:44.647
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-core.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:44.725
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/egit-egit.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:44.782
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/tm-terminal.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:44.867
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-connectivity.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:44.936
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/epic.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:45.008
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/gef-core.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:45.068
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/cvs.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:45.136
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/sdk.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:45.597
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/cdt-parsers.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:45.661
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/jdt.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 10:25:45.778
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/cdt.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-02-01 10:25:54.362
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-02-01 10:25:54.362
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.debug.ui 4 0 2016-02-01 10:30:33.249
+!MESSAGE Tab group extension: org.eclipse.cdt.launch.applicationProfileLaunchTabGroup for type org.eclipse.cdt.launch.applicationLaunchType for the [profile] mode has been replaced by extension: org.eclipse.cdt.launch.applicationProfileLaunchTabGroup
+!SESSION 2016-02-01 15:08:40.303 -----------------------------------------------
+eclipse.buildId=4.5.1.v20160106-1000
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:42.720
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/swt-chart.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:42.819
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/rse.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:43.157
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-sqldevtools.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:43.285
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-valgrind.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:43.393
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/mylyn-context-java.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:43.528
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/gef-core.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:43.608
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/tm-terminal.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:43.724
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/mylyn-docs.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:43.879
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/subclipse.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:43.934
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/subclipse-graph.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:43.998
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-connectivity.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:44.063
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/e4-importer.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:44.105
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/jgit.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:44.163
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/remote.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:44.218
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-modelbase.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:44.270
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/emf-sdk.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:44.412
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-enablement.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:44.551
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/mylyn-commons.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:44.810
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/egit-egit.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:44.897
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-rpm-editor.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:44.941
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-changelog.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:45.024
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/emf-runtime.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:45.140
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-doc.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:45.212
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/epic.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:45.280
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/ptp.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:45.409
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/babel.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:45.435
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-core.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:45.553
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/jdt.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:45.704
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/cdt-parsers.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:45.794
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/cvs.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:45.870
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/cdt.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-01 15:08:46.018
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/sdk.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-02-01 15:08:54.203
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-02-01 15:08:54.203
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-02-01 15:09:32.483
+!MESSAGE Could not auto-share project PA1re
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'PA1re'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-02-01 15:09:32.484
+!MESSAGE Provided SVN information does not match that on disk for project 'PA1re'.
+
+!ENTRY org.eclipse.debug.ui 4 0 2016-02-01 15:11:34.766
+!MESSAGE Tab group extension: org.eclipse.cdt.launch.applicationProfileLaunchTabGroup for type org.eclipse.cdt.launch.applicationLaunchType for the [profile] mode has been replaced by extension: org.eclipse.cdt.launch.applicationProfileLaunchTabGroup
+!SESSION 2016-02-03 15:49:34.938 -----------------------------------------------
+eclipse.buildId=4.5.1.v20160106-1000
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:37.274
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-sqldevtools.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:37.528
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/mylyn-commons.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:37.874
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/emf-runtime.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.002
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/gef-core.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.048
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-modelbase.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.151
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/e4-importer.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.181
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/mylyn-context-java.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.257
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-connectivity.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.310
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-rpm-editor.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.381
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/remote.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.554
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/epic.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.600
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/rse.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.766
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-doc.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.850
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/dtp-enablement.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:38.996
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-changelog.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.040
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/ptp.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.144
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/subclipse-graph.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.199
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/babel.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.240
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-valgrind.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.315
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/swt-chart.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.389
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/tm-terminal.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.471
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/linuxtools-core.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.534
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/subclipse.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.569
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/jgit.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.648
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/emf-sdk.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.800
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/egit-egit.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.895
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/share/eclipse/dropins/mylyn-docs.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:39.994
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/cdt.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:40.151
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/jdt.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:40.268
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/sdk.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:40.596
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/cvs.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-02-03 15:49:40.649
+!MESSAGE Unable to acquire PluginConverter service during generation for: /usr/lib64/eclipse/dropins/cdt-parsers.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-02-03 15:49:48.816
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-02-03 15:49:48.816
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-02-03 15:51:05.502
+!MESSAGE Could not auto-share project PA1
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'PA1'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-02-03 15:51:05.503
+!MESSAGE Provided SVN information does not match that on disk for project 'PA1'.
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-02-03 16:10:10.877
+!MESSAGE Could not auto-share project test
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'test'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-02-03 16:10:10.877
+!MESSAGE Provided SVN information does not match that on disk for project 'test'.
+!SESSION 2016-02-03 16:56:54.039 -----------------------------------------------
+eclipse.buildId=4.5.1.v20160106-1000
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /s/bach/k/under/lisaxu/cs435 -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-02-03 16:56:55.610
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-02-03 16:56:59.012
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-02-03 16:56:59.012
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-02-03 16:57:01.244
+!MESSAGE Invalid ZIP archive: /s/bach/k/under/lisaxu/CS435/PA1/hadoopJars/commons-logging-1.1.3.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-02-03 16:57:01.247
+!MESSAGE Invalid ZIP archive: /s/bach/k/under/lisaxu/CS435/PA1/hadoopJars/hadoop-common-2.6.0.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-02-03 16:57:01.249
+!MESSAGE Invalid ZIP archive: /s/bach/k/under/lisaxu/CS435/PA1/hadoopJars/hadoop-mapreduce-client-core-2.6.0.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-02-03 16:57:01.250
+!MESSAGE Invalid ZIP archive: /s/bach/k/under/lisaxu/CS435/PA1/hadoopJars/hadoop-mapreduce-client-jobclient-2.6.0.jar
