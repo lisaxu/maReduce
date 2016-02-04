@@ -47,7 +47,7 @@ public class ParserTest {
 		ParserTest t = new ParserTest();
 	
 		test = t.readFile("59.txt", StandardCharsets.US_ASCII);
-		System.out.println(t.getBookID(test));
+		System.out.println(t.getAuthor(test));
 	}
 
 }

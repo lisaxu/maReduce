@@ -1,0 +1,19 @@
+package pa1;
+
+public class ParserTest {
+	
+	public String getAuthor(String wholeFile) {
+		int start = wholeFile.indexOf("Author");
+		int end = wholeFile.indexOf("\n", start);
+		
+		return wholeFile.substring(start, end);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String test = "The Project Gutenberg EBook of A Discourse on Method, by René Descartes\nThis eBook is for the use of anyone anywhere at no cost and with\nalmost no restrictions whatsoever.  You may copy it, give it away or\nre-use it under the terms of the Project Gutenberg License included\nwith this eBook or online at www.gutenberg.net\n\n\nTitle: A Discourse on Method\n\nAuthor: René Descartes\n\nRelease Date: July 1, 2008 [EBook #59]\n\nLanguage: English\n\nCharacter set encoding: ASCII\n\n*** START OF THIS PROJECT GUTENBERG EBOOK A DISCOURSE ON METHOD ***";
+		ParserTest t = new ParserTest();
+		System.out.println(t.getAuthor(test));
+	}
+
+}
